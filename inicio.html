@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencia Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Calculadora Multifunción -- Dayler Giraldo Urrea -- Adso</h1>
+        <p>Operaciones Numéricas, Cadenas de Texto y Vectores</p>
+    </header>
+
+    <main class="contenedor-paneles">
+        
+     
+        <section class="panel">
+            <h2>1. Operaciones Numéricas</h2>
+            
+            <div class="grupo-input">
+                <label for="num1">Valor 1:</label>
+                <input type="number" id="num1" placeholder="Ingrese primer número">
+            </div>
+
+            <div class="grupo-input">
+                <label for="num2">Valor 2:</label>
+                <input type="number" id="num2" placeholder="Ingrese segundo número">
+            </div>
+
+            <div class="grupo-botones">
+                <button onclick="sumar()">Sumar</button>
+                <button onclick="restar()">Restar</button>
+                <button onclick="multiplicar()">Multiplicar</button>
+                <button onclick="dividir()">Dividir</button>
+                <button onclick="sacarRaiz()">Sacar Raíz (Valor 1)</button>
+                <button onclick="esMultiplo()">¿Es Múltiplo?</button>
+                <button onclick="compararNumeros()">Comparar</button>
+            </div>
+
+            <div class="grupo-input resultado">
+                <label for="resNum">Resultado:</label>
+                <input type="text" id="resNum" readonly placeholder="Aquí aparecerá el resultado">
+            </div>
+        </section>
+
+       
+        <section class="panel">
+            <h2>2. Cadenas de Texto</h2>
+            
+            <div class="grupo-input">
+                <label for="cad1">Cadena 1:</label>
+                <input type="text" id="cad1" placeholder="Ingrese el texto principal">
+            </div>
+
+            <div class="grupo-input">
+                <label for="cad2">Cadena 2 / Carácter:</label>
+                <input type="text" id="cad2" placeholder="Texto secundario o carácter">
+            </div>
+
+            <div class="grupo-botones">
+                <button onclick="compararCadenas()">Comparar Tamaño</button>
+                <button onclick="contarCaracter()">Contar Carácter</button>
+                <button onclick="quitarEspacios()">Quitar Espacios (Cad 1)</button>
+                <button onclick="insertarCadena()">Insertar en la Mitad</button>
+            </div>
+
+            <div class="grupo-input resultado">
+                <label for="resCad">Resultado:</label>
+                <input type="text" id="resCad" readonly placeholder="Aquí aparecerá el resultado">
+            </div>
+        </section>
+
+       
+        <section class="panel">
+            <h2>3. Operaciones con Vectores</h2>
+            
+            <div class="grupo-input">
+                <label for="vecInput">Números separados por coma:</label>
+                <input type="text" id="vecInput" placeholder="Ej: 4, 8, 2, 10, 5">
+            </div>
+
+            <div class="grupo-botones">
+                <button onclick="crearVector()">Crear Arreglo</button>
+                <button onclick="sumarVector()">Sumar Elementos</button>
+                <button onclick="multiplicarPares()">Multiplicar Pos. Pares</button>
+            </div>
+
+            <div class="grupo-input resultado">
+                <label for="resVec">Resultado:</label>
+                <input type="text" id="resVec" readonly placeholder="Aquí aparecerá el resultado">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
